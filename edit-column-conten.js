@@ -2,10 +2,12 @@
 // @name        Edit Column Content
 // @namespace   Edit Column Content
 // @match       https://moodle.bbbaden.ch/*
+// @downloadURL https://github.com/MyDrift-user/EditColumnContent/edit/main/edit-column-conten.js
+// @updateURL   https://github.com/MyDrift-user/EditColumnContent/edit/main/edit-column-conten.js
 // @grant       none
 // @version     1.0
-// @author      -
-// @description 30.10.2023, 12:57:39
+// @author      MyDrift (https://github.com/MyDrift-user/)
+// @description edit the content of the columns
 // ==/UserScript==
 
 // To Create an additional item to be edited, you need to add:
