@@ -55,4 +55,16 @@
     removeElement('shouldRemoveKalender');
     removeElement('shouldRemoveAktivitaeten');
     removeElement('shouldRemoveRSScontent');
+
+
+    var classToRemove = 'section course-section main clearfix';
+
+    // Select all elements with the specified class
+    var elements = document.querySelectorAll('.' + classToRemove);
+
+    // Loop through the selected elements and remove the class
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].classList.remove(classToRemove);
+
+        
 })();
