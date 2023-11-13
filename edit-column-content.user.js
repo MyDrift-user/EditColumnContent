@@ -6,7 +6,7 @@
 // @downloadURL https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @updateURL   https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @author      MyDrift (https://github.com/MyDrift-user/)
 // @description edit the content of the columns
 // ==/UserScript==
