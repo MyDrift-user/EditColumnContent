@@ -2,6 +2,7 @@
 // @name        Edit Column Content
 // @namespace   Edit Column Content
 // @match       https://moodle.bbbaden.ch/*
+// @icon        https://github.com/MyDrift-user/EditColumnContent/raw/main/column-logo.svg
 // @downloadURL https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @updateURL   https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @grant       none
