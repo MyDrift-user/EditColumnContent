@@ -2,10 +2,10 @@
 // @name        Edit Column Content
 // @namespace   Edit Column Content
 // @match       https://moodle.bbbaden.ch/*
-// @downloadURL https://github.com/MyDrift-user/EditColumnContent/blob/main/edit-column-conten.js
-// @updateURL   https://github.com/MyDrift-user/EditColumnContent/blob/main/edit-column-conten.js
+// @downloadURL https://github.com/MyDrift-user/EditColumnContent/blob/main/edit-column-content.user.js
+// @updateURL   https://github.com/MyDrift-user/EditColumnContent/blob/main/edit-column-content.user.js
 // @grant       none
-// @version     1.0
+// @version     1.0.1
 // @author      MyDrift (https://github.com/MyDrift-user/)
 // @description edit the content of the columns
 // ==/UserScript==
