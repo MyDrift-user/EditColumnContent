@@ -1,6 +1,6 @@
 # EditColumnContent
 
-installation click [here](https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js)
+installation click: [here](https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js)
 
 UserScript for moodle.bbbaden.ch for editing the content of the column
 
