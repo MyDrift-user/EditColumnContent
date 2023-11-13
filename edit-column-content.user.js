@@ -2,8 +2,8 @@
 // @name        Edit Column Content
 // @namespace   Edit Column Content
 // @match       https://moodle.bbbaden.ch/*
-// @downloadURL https://github.com/MyDrift-user/EditColumnContent/blob/main/edit-column-content.user.js
-// @updateURL   https://github.com/MyDrift-user/EditColumnContent/blob/main/edit-column-content.user.js
+// @downloadURL https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
+// @updateURL   https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @grant       none
 // @version     1.0.1
 // @author      MyDrift (https://github.com/MyDrift-user/)
