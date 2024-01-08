@@ -6,55 +6,45 @@
 // @downloadURL https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @updateURL   https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js
 // @grant       none
-// @version     1.0.2
+// @version     1.0.3
 // @author      MyDrift (https://github.com/MyDrift-user/)
 // @description edit the content of the columns
 // ==/UserScript==
 
-// To Create an additional item to be edited, you need to add:
-// -  a row "shouldRemoveX" in "var elementMapping" with the data-block and "var removalStatus" with true/false 
-// - On the Bottom add a "removeElementX" 
+// TODO: allow to block specific elements
 
 (function() {
     'use strict';
 
-    // Create a mapping of boolean names to data-block values
-    var elementMappings = {
-        shouldAdministration: 'settings',
-        shouldRemoveKursabschnitte: 'section_links',
-        shouldRemoveAnkuendigungen: 'news_items',
-        shouldRemoveKalender: 'calendar_upcoming',
-        shouldRemoveAktivitaeten: 'recent_activity',
-        shouldRemoveRSScontent: 'rss_client'
-    };
-
-    // Create an object to store the removal status for each element by their boolean names
-    var removalStatus = {
-        shouldAdministration: true,
-        shouldRemoveKursabschnitte: false,
-        shouldRemoveAnkuendigungen: true,
-        shouldRemoveKalender: true,
-        shouldRemoveAktivitaeten: true,
-        shouldRemoveRSScontent: false
-    };
-
-    // Function to remove an element if its removal status is true
-    function removeElement(booleanName) {
-        var dataBlockValue = elementMappings[booleanName];
-        var elements = document.querySelectorAll('[data-block="' + dataBlockValue + '"]');
-        if (removalStatus[booleanName]) {
-            elements.forEach(function(element) {
-                element.remove();
-            });
+    function deleteChildElements(element) {
+        while (element.firstChild) {
+            element.removeChild(element.firstChild);
         }
     }
 
-    // Call removeElement for each boolean name as needed
-    removeElement('shouldAdministration');
-    removeElement('shouldRemoveKursabschnitte');
-    removeElement('shouldRemoveAnkuendigungen');
-    removeElement('shouldRemoveKalender');
-    removeElement('shouldRemoveAktivitaeten');
-    removeElement('shouldRemoveRSScontent');
-        
+    var elementClassMapping = {
+        links: 'block_html',
+        course_list: 'block_course_list',
+        calendar_month: 'block_calendar_month'
+    };
+
+    var removeList = {
+        links: true,
+        course_list: true,
+        calendar_month: true
+    };
+
+    for (var elementKey in elementClassMapping) {
+        if (removeList[elementKey]) {
+            // If the element should be removed, proceed
+            var elementClass = elementClassMapping[elementKey];
+            var elements = document.querySelectorAll('.' + elementClass);
+
+            elements.forEach(function(element) {
+                deleteChildElements(element);
+                element.parentNode.removeChild(element); // Remove the element
+            });
+        }
+    }
 })();
+
