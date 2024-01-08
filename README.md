@@ -7,8 +7,8 @@ UserScript for moodle.bbbaden.ch for editing the content of the columns
 
 
 Change the visibility of those items by editing the boolean to true / false
-- true removes the item
-- false does NOT remove them
+- true: removes the item
+- false: does NOT remove them
 
 # List of Items that can be edited:
 - Administration
