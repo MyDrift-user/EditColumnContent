@@ -1,4 +1,5 @@
 # EditColumnContent
+[![Static Badge](https://img.shields.io/badge/Install-Script-green?style=for-the-badge)](https://raw.githubusercontent.com/Hutch79/CompactMoodle/main/compactMoodle.user.css)
 
 installation click: [here](https://github.com/MyDrift-user/EditColumnContent/raw/main/edit-column-content.user.js)
 
